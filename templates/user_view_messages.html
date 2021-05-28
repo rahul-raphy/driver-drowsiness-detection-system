@@ -1,0 +1,37 @@
+{% include 'user_header.html'  %}
+<div id='page-wrapper'>
+	<div id='page-inner'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<h1>View Messages</h1>
+				<div class='form'>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-12'>
+				<table class='table'>
+					<thead>
+						<tr>
+							<th>Description</th>
+							<th>First name</th>
+							<th>Description</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for row in data['message'] %}
+							<tr>
+								<td>{{row['description']}}</td>
+								<td>{{row['first_name']}}</td>
+								<td>{{row['description']}}</td>
+								<td>{{row['status']}}</td>
+							</tr>
+						{% endfor %}
+				</tbody>
+				<table>
+			</div>
+		</div>
+	</div>
+</div>
+{% include 'user_footer.html'  %}

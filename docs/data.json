@@ -1,0 +1,29 @@
+{
+    "dir": "C:\\Users\\Anil\\Desktop",
+    "project": "Drowsy_driver_distraction_detecting_system_",
+    "database": "",
+    "module_description": {
+        "Admin": {
+            "Home": {
+                "tables": "false",
+                "type": "home"
+            },
+            "Logout": {
+                "tables": "false",
+                "type": "logout"
+            },
+            "Registered cars": {
+                "tables": "user",
+                "type": "view"
+            },
+            "Drowsiness detections": {
+                "tables": "detection",
+                "type": "view"
+            },
+            "Message to driver": {
+                "tables": "message",
+                "type": "manage"
+            }
+        }
+    }
+}

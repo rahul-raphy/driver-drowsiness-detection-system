@@ -1,0 +1,41 @@
+{% include 'admin_header.html'  %}
+<div id='page-wrapper'>
+	<div id='page-inner'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<h1>Registered cars</h1>
+				<div class='form'>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-12'>
+				<table class='table'>
+					<thead>
+						<tr>
+							<th>Username</th>
+							<th>First name</th>
+							<th>Last name</th>
+							<th>Vehicle no</th>
+							<th>Phone</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for row in data['user'] %}
+							<tr>
+								<td>{{row['username']}}</td>
+								<td>{{row['first_name']}}</td>
+								<td>{{row['last_name']}}</td>
+								<td>{{row['vehicle_no']}}</td>
+								<td>{{row['phone']}}</td>
+								<td>{{row['email']}}</td>
+							</tr>
+						{% endfor %}
+				</tbody>
+				<table>
+			</div>
+		</div>
+	</div>
+</div>
+{% include 'admin_footer.html'  %}
